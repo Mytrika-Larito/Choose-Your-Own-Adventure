@@ -34,11 +34,11 @@ if age >= 12:
         l_o_r = "no"
         print ("You decided it was to dangerous. So, you went the other way.")
       elif ll == "no":
-          print("You head towards the noise. Those strange noises were coming from a lively festival in a small village.")
+          print("You head towards the noise. Those strange noises were coming from a lively festival in a small village.") 
       
 
     '''Right path'''
-    if l_o_r == "no":
+    if l_o_r == "right":
       print("You walk into the forest. It suddenly got dark.What do you do. You can barely see whats ahead of you.")
       rr = input("Do you go back?(yes/no) ").lower()
 
@@ -46,7 +46,16 @@ if age >= 12:
       print("N/A")
 
     if rr == "no":
-      print("N/A")
+      health -= 7
+      print("As you went forward. You were attack. Your health is know at", health, "health. You kept on going until you were at a clearing. There was no trees and the sun shine right above you. Though know you find yourself in front of two choices. Both path looks dark and there is no way in telling what each path might have at the end.")
+      rr2 = input("Do you head right or left?(right/left) ").lower()
+
+      if rr2 == "test":
+        health -= 3
+        print(health,"health")
+
+      if health <= 0:
+        print("You died! ;-;")
 
       
 
