@@ -33,6 +33,8 @@ if age >= 12:
       if ll == "yes":
         l_o_r = "no"
         print ("You decided it was to dangerous. So, you went the other way.")
+        health -= 5
+        print("You are at", health, "health")
       elif ll == "no":
           print("You head towards the noise. Those strange noises were coming from a lively festival in a small village.")
       
